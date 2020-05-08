@@ -16,8 +16,6 @@ def Multiples_of_3_and_5(num):
 			if(i%3 == 0 or i%5 == 0):
 				result.append(i)
 				counter = counter+1
-			else:
-				continue
 	print(result)
 	sum_result = 0
 	for k in range(0,counter):
