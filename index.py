@@ -8,6 +8,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 def Multiples_of_3_and_5(num):
 	counter = 0
+	sum_result = 0
 	if(num<3):
 		result = "[ ]"
 	else:
@@ -15,13 +16,10 @@ def Multiples_of_3_and_5(num):
 		for i in range(3,num):
 			if(i%3 == 0 or i%5 == 0):
 				result.append(i)
+				sum_result += i
 				counter = counter+1
 	print(result)
-	sum_result = 0
-	for k in range(0,counter):
-		sum_result +=result[k]
 	print("Multiples is: ",sum_result)
-
 
 inputt = 1000
 Multiples_of_3_and_5(inputt)
